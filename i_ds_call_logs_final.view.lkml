@@ -32,7 +32,7 @@ view: i_ds_call_logs_final {
       quarter,
       year
     ]
-    sql: ${TABLE}.Date ;;
+    sql: ${TABLE}.Date_time ;;
   }
 
   dimension: direction {
