@@ -30,6 +30,7 @@ view: i_ds_call_logs_final {
       week,
       month,
       quarter,
+      time_of_day,
       year
     ]
     sql: ${TABLE}.Date ;;
