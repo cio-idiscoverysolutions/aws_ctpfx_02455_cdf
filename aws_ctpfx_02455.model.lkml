@@ -10,3 +10,5 @@ datagroup: ctpfx_02455_default_datagroup {
 
 
 explore: i_ds_vw_call_logs {}
+
+explore: i_ds_call_logs_final {}
