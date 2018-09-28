@@ -82,6 +82,11 @@ view: i_ds_call_logs_final {
     sql: ${TABLE}.comments ;;
   }
 
+  dimension: DateRange {
+    type: string
+    sql: ${TABLE}.DateRange ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [caller_name, recipient_name]
