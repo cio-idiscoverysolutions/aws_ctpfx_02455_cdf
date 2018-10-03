@@ -82,6 +82,11 @@ view: i_ds_call_logs_final {
     sql: ${TABLE}.comments ;;
   }
 
+  dimension: RecordType {
+    type: string
+    sql: ${TABLE}.RecordType ;;
+  }
+
   dimension: DateRange {
     type: string
     sql: ${TABLE}.DateRange ;;
