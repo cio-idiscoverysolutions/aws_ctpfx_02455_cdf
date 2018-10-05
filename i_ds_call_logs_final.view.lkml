@@ -92,6 +92,16 @@ view: i_ds_call_logs_final {
     sql: ${TABLE}.DateRange ;;
   }
 
+  dimension: Recipient_Phone_Type {
+    type: string
+    sql: ${TABLE}.Recipient_Phone_Type ;;
+  }
+
+  dimension: Caller_Phone_Type {
+    type: string
+    sql: ${TABLE}.Caller_Phone_Type ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [caller_name, recipient_name]
