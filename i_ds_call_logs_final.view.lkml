@@ -45,7 +45,10 @@ view: i_ds_call_logs_final {
     type: string
     sql: ${TABLE}.Duration_HHMMSS ;;
   }
-
+  dimension: TimeOfDay {
+    type: string
+    sql: ${TABLE}.TimeOfDay ;;
+  }
   dimension: duration_seconds {
     type: number
     sql: ${TABLE}."Duration Seconds" ;;
