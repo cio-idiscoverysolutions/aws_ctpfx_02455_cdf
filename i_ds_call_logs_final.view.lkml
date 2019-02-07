@@ -101,7 +101,15 @@ view: i_ds_call_logs_final {
     type: string
     sql: ${TABLE}.Caller_Phone_Type ;;
   }
+  dimension: forwarding_number {
+    type: string
+    sql: ${TABLE}.ForwardingNumber ;;
+  }
 
+  dimension: forwarding_name {
+    type: string
+    sql: ${TABLE}.ForwardingNumber_Name ;;
+  }
   measure: count {
     type: count
     drill_fields: [caller_name, recipient_name]
