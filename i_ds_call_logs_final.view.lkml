@@ -104,14 +104,14 @@ view: i_ds_call_logs_final {
     type: string
     sql: ${TABLE}.Caller_Phone_Type ;;
   }
-  dimension: forwarding_number {
+  dimension: other_number {
     type: string
-    sql: ${TABLE}.ForwardingNumber ;;
+    sql: ${TABLE}.OtherNumber ;;
   }
 
-  dimension: forwarding_name {
+  dimension: other_name {
     type: string
-    sql: ${TABLE}.ForwardingNumber_Name ;;
+    sql: ${TABLE}.Other_Name ;;
   }
   measure: count {
     type: count
