@@ -111,7 +111,7 @@ view: i_ds_call_logs_final {
 
   dimension: other_name {
     type: string
-    sql: ${TABLE}.Other_Name ;;
+    sql: ${TABLE}.OtherNumber_Name ;;
   }
   measure: count {
     type: count
